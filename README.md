@@ -44,17 +44,54 @@ To work with original repo, the RPi.GPIO library was replaced by [OPi.GPIO](http
 * RX = PIN 8 | PG06 / UART1_TX --> GREEN
 * TX = PIN 10 | PG07 / UART1_RX --> GREEN
 * ENT = PIN 12 | PA07 / PA_EINT7 / SIM_CLK --> GREY
-* GND = PIN 14 | GND--> BLACK
+* GND = PIN 14 | GND --> BLACK
 * A = PIN 16 | PA19 / TWI1_SDA --> YELLOW
 * B = PIN 18 | PA18 / TWI1_SCK --> YELLOW
 
 Here's a diagram based on color selection as stated above:
 
+![Orange-Pi-Zero-Pinout](https://user-images.githubusercontent.com/24323772/219821760-080476f0-08d2-47b2-a7fe-1276afe9f644.png)
 
 ### 1.3 Run The Code
 
 Enter the downloaded DWIN_T5UIC1_LCD folder.
-Run with `python3 ./run.py`
+Make new file run.py and copy/paste in the following (pick one)
+
+For Ender3 V2/S1
+```python
+#!/usr/bin/env python3
+from dwinlcd import DWIN_LCD
+
+encoder_Pins = (18, 16)
+button_Pin = 12
+LCD_COM_Port = '/dev/ttyS5'
+API_Key = 'XXXXXX'
+
+DWINLCD = DWIN_LCD(
+	LCD_COM_Port,
+	encoder_Pins,
+	button_Pin,
+	API_Key
+)
+```
+
+If your control wheel is reversed (Voxelab Aquila) use this instead.
+```python
+#!/usr/bin/env python3
+from dwinlcd import DWIN_LCD
+
+encoder_Pins = (18, 16)
+button_Pin = 12
+LCD_COM_Port = '/dev/ttyS5'
+API_Key = 'XXXXXX'
+
+DWINLCD = DWIN_LCD(
+	LCD_COM_Port,
+	encoder_Pins,
+	button_Pin,
+	API_Key
+)
+```
 
 ### 1.4 Run at boot:
 
