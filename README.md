@@ -31,25 +31,25 @@ To:
 
 To work with original repo, the RPi.GPIO library was replaced by [OPi.GPIO](https://github.com/rm-hull/OPi.GPIO). 
 
-- You should clone OPi.GPIO repo from github and manually install it, or [install via pip](https://opi-gpio.readthedocs.io/en/latest/install.html) as stated in Lib requirements, and then add [zero2.py](https://github.com/rm-hull/OPi.GPIO/blob/master/orangepi/zero2.py) module into `install-dir/OPi.GPIO/orangepi`
+- You should clone OPi.GPIO repo from github and manually install it, or [install via pip](https://opi-gpio.readthedocs.io/en/latest/install.html) as stated in Lib requirements, and then add [zeroplus.py](https://github.com/rm-hull/OPi.GPIO/blob/master/orangepi/zero2.py) module into `install-dir/OPi.GPIO/orangepi`
 
 - Check carefully where the package is installed as then interpreter need to know the directory in its path.
 
 - Also check permissions to call sysfs pin mappings as [non root access](https://opi-gpio.readthedocs.io/en/latest/install.html#non-root-access)
 
 ### 1.2 Wire the display 
-  * Display <-> Orange Pi Zero 2 GPIO
-  * Rx  =   Pin 8  (UART5 Tx - PH2) <-- Orange
-  * Tx  =   Pin 10  (UART5 Rx - PH3) <-- Yellow
-  * Ent =   Pin 15 (PC8) <-- Green
-  * A   =   Pin 11 (PC6) <-- Gray
-  * B   =   Pin 13 (PC5) <-- Purple
-  * Vcc =   Pin 2   (5V) <-- Black
-  * Gnd =   Pin 4   (GND) <-- White
+
+* Display <-> Orange Pi Zero Plus GPIO
+* VCC = PIN 2 | 5V --> RED
+* RX = PIN 8 | PG06 / UART1_TX --> GREEN
+* TX = PIN 10 | PG07 / UART1_RX --> GREEN
+* ENT = PIN 12 | PA07 / PA_EINT7 / SIM_CLK --> GREY
+* GND = PIN 14 | GND--> BLACK
+* A = PIN 16 | PA19 / TWI1_SDA --> YELLOW
+* B = PIN 18 | PA18 / TWI1_SCK --> YELLOW
 
 Here's a diagram based on color selection as stated above:
 
-![OPiZ2 Ender3v2_Screen Connection](https://user-images.githubusercontent.com/34515038/190923377-edf098a4-f5e4-47c0-8f06-571636c35246.png)
 
 ### 1.3 Run The Code
 
