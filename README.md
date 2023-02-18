@@ -1,10 +1,12 @@
-# DWIN_T5UIC1_LCD
+# Ender3V2S1_LCD (DWIN_T5UIC1_LCD)
 
 Python class for the Ender 3 V2/S1 LCD runing [Klipper](https://github.com/Klipper3d/klipper) with [Moonraker](https://github.com/arksine/moonraker) for Orange Pi Zero Plus Board using OPi.GPIO
 
 - https://www.klipper3d.org/
 - https://octoprint.org/
 - https://moonraker.readthedocs.io/
+
+~ Please ensure you got the "DWIN" and not "DACAI" Display Unit in your printer ~
 
 ## 1. Setup:
 
