@@ -75,12 +75,12 @@ DWINLCD = DWIN_LCD(
 )
 ```
 
-If your control wheel is reversed (Voxelab Aquila) use this instead.
+If your control wheel is reversed use this instead.
 ```python
 #!/usr/bin/env python3
 from dwinlcd import DWIN_LCD
 
-encoder_Pins = (18, 16)
+encoder_Pins = (16, 18)
 button_Pin = 12
 LCD_COM_Port = '/dev/ttyS5'
 API_Key = 'XXXXXX'
