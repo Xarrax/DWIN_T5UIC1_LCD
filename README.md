@@ -1,10 +1,10 @@
 # DWIN_T5UIC1_LCD
 
-Python class for the Ender 3 V2 LCD runing klipper3d with Moonraker for Orange Pi Zero 2 Board using OPi.GPIO
+Python class for the Ender 3 V2/S1 LCD runing [Klipper](https://github.com/Klipper3d/klipper) with [Moonraker](https://github.com/arksine/moonraker) for Orange Pi Zero Plus Board using OPi.GPIO
 
-- https://www.klipper3d.org
+- https://www.klipper3d.org/
 - https://octoprint.org/
-- https://github.com/arksine/moonraker
+- https://moonraker.readthedocs.io/
 
 ## 1. Setup:
 
