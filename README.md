@@ -12,7 +12,7 @@ Python class for the Ender 3 V2/S1 LCD runing [Klipper](https://github.com/Klipp
 
 ### [Enabling Klipper's API socket](https://www.klipper3d.org/API_Server.html)
 
-Well in this fork of DWIN_T5UIC1_LCD we doesn't need to do much as we wll use the Moonraker API unless your "moonraker.sock" has a custom folder path we won't do any big changes.
+Well in this fork of DWIN_T5UIC1_LCD we doesn't need to do much as we will use the Moonraker API unless your "moonraker.sock" has a custom folder path we won't do any big changes.
 
 # 1.1 Library requirements
 
