@@ -24,7 +24,7 @@ To:
   sudo apt-get install python3-pip python3-serial git
   sudo pip3 install multitimer
   sudo pip3 install OPi.GPIO
-  git clone https://github.com/gabrielribbae/DWIN_T5UIC1_LCD.git
+  git clone https://github.com/Xarrax/DWIN_T5UIC1_LCD.git
   ```
 
 ### 1.1.1 Important
