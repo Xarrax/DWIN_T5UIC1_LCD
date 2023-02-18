@@ -264,7 +264,7 @@ class PrinterData:
 
 	files = None
 	filesByTime = None
-	MACHINE_SIZE = "235x235x240"
+	MACHINE_SIZE = "235x235x250"
 	SHORT_BUILD_VERSION = "1.11"
 	CORP_WEBSITE_E = "https://www.klipper3d.org/"
  
