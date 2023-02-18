@@ -303,7 +303,13 @@ class PrinterData:
 		self.op = MoonrakerSocket(URL, 80, API_Key)
 		self.status = None
 		print(self.op.base_address)
-		self.ks = KlippySocket('/tmp/klippy_uds', callback=self.klippy_callback)
+		
+		#  TODO: change Socket to moonraker socket
+
+		self.ks = KlippySocket('/home/pi/printer_data/comms/moonraker.sock', callback=self.klippy_callback)
+
+		#  TODO: replace "pi" with your choosen username and ensure to correct the path to your "moonraker.sock" if need
+		
 		subscribe = {
 			"id": 4001,
 			"method": "objects/subscribe",
