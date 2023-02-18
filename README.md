@@ -39,14 +39,14 @@ To work with original repo, the RPi.GPIO library was replaced by [OPi.GPIO](http
 
 ### 1.2 Wire the display 
 
-* Display <-> Orange Pi Zero Plus GPIO
-* VCC = PIN 2 | 5V --> RED
-* RX = PIN 8 | PG06 / UART1_TX --> GREEN
-* TX = PIN 10 | PG07 / UART1_RX --> GREEN
-* ENT = PIN 12 | PA07 / PA_EINT7 / SIM_CLK --> GREY
-* GND = PIN 14 | GND --> BLACK
-* A = PIN 16 | PA19 / TWI1_SDA --> YELLOW
-* B = PIN 18 | PA18 / TWI1_SCK --> YELLOW
+* Display <----> Orange Pi Zero Plus GPIO
+* VCC	= PIN 02 | 5V --> RED
+* RX	= PIN 08 | PG06 / UART1_TX --> GREEN
+* TX	= PIN 10 | PG07 / UART1_RX --> GREEN
+* ENT	= PIN 12 | PA07 / PA_EINT7 / SIM_CLK --> GREY
+* GND	= PIN 14 | GND --> BLACK
+* A	= PIN 16 | PA19 / TWI1_SDA --> YELLOW
+* B	= PIN 18 | PA18 / TWI1_SCK --> YELLOW
 
 Here's a diagram based on color selection as stated above:
 
