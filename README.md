@@ -64,7 +64,7 @@ from dwinlcd import DWIN_LCD
 
 encoder_Pins = (18, 16)
 button_Pin = 12
-LCD_COM_Port = '/dev/ttyS5'
+LCD_COM_Port = '/dev/ttyS1'
 API_Key = 'XXXXXX'
 
 DWINLCD = DWIN_LCD(
